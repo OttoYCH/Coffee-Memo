@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" type="text/css" href="./css/coffee.css">
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-database.js"></script>
+    <title>Coffee-Dex</title> 
+  </head>
+  <body>
+    
+  <div class="searchPage">
+  	<div class="searchbar">
+      <input type="text" placeholder="Enter coffee title" id="coffee">
+      <button class="searchBtn" onclick="listCoffees()">Search</button>
+    </div>
+
+      <button onclick="location.href = './coffee_hunter.html?random';" class="randomcontainer">Random Coffee</button>
+	
+	
+		<button onclick="location.href = './main_page.html';" class="backcontainer">Back</button>
+
+    <div id="div1">
+    </div>
+	
+</div>  
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="theme-color" content="#2F3BA2" />
+    <link rel="stylesheet" type="text/css" href="./css/coffee.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-database.js"></script>
+    
+    <title>Coffee-Dex</title> 
+  </head>
+
+ <body>
+
+<div class="mainPage_container"> 
+
+    	<button onclick="location.href = './SearchForCoffee.html';" value="COFFEE HUNTER" id="searchCoffee">COFFEE HUNTER</button>
+
+		<button onclick="location.href = './CoffeeStorage.html';" value="COFFEE STORAGE" id="coffeeStorage">COFFEE STORAGE</button>
+
+		<button onclick="location.href = './ShareWithFriends.html';" value="SHARE WITH FRIENDS" id="shareFriend">SHARE WITH FRIENDS</button>
+
+		<button value="LOGOUT" id="btnLogout" onclick="userLogout()">LOGOUT</button>
+	
+</div>
+    <script src="./js/app.min.js"></script>
+ </body>
+   <script>
+    if ('serviceWorker' in navigator) {
+     navigator.serviceWorker
+             .register('./service-worker.js')
+             .then(function() 
+                    { console.log('Service Worker Registered'); 
+             });
+}
+  </script>
+</html>

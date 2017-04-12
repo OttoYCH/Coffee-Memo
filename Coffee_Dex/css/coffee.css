@@ -1,0 +1,906 @@
+/* This is body for all pages */
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+#logo img {
+    max-width: 80%;
+    height: auto !important;
+}
+
+#loginimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo h1 {
+    text-align: center;
+	font-size: 2vw;
+	font-weight: bold;
+	font-family: "Comic Sans MS";
+	color: #994C00;
+}
+
+/*#label_email {
+    font-family: "Comic Sans MS";
+}
+
+#label_pwd {
+    font-family: "Comic Sans MS";
+}*/
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    font-family: "Comic Sans MS";
+}
+
+
+.login_page {
+    padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.wireframe h1  {
+	color: red;
+	font-weight:bold;
+	font-family:Courier;
+	font-style: italic;
+}
+
+.mainPage_container {
+	background-color: #DAE8FC;
+	width: 40vw;
+	margin: auto;
+	height: 70vw;
+	border-radius: 4vw;
+	padding: 5vw 5vh;
+	border: 2vw double #6C8EBF;
+	position: relative;
+	top: 15vh;
+}
+
+#searchCoffee {
+	width: 100%;
+	height: 20%;
+	background: url(../Dummy/coffeeBean.png) no-repeat scroll 2px 3px;
+	background-size: 5vw;
+	background-position: 4vw;
+	padding-left: 8vw;
+	background-color: #FFF2CC;
+	border: 2px double #D6B656;
+	border-radius: 1vw;
+	margin: -1vw;
+	font-size: 3vw;
+	font-weight: bold;
+	font-family: "Comic Sans MS";
+	color: #994C00;
+	position: relative;
+	top: 2vh;
+	left: 2vw;
+}
+
+#coffeeStorage {
+	width: 100%;
+	height: 20%;
+	background: url(../Dummy/coffeeBean.png) no-repeat scroll 2px 3px;
+	background-size: 5vw;
+	background-position: 4vw;
+	padding-left: 8vw;
+	background-color: #FFF2CC;
+	border: 2px double #D6B656;
+	border-radius: 1vw;
+	margin: -1vw;
+	font-size: 3vw;
+	font-weight: bold;
+	font-family: "Comic Sans MS";
+	color: #994C00;
+	position: relative;
+	top: 6vh;
+	left: 2vw;
+}
+
+#shareFriend {
+	width: 100%;
+	height: 20%;
+	background: url(../Dummy/coffeeBean.png) no-repeat scroll 2px 3px;
+	background-size: 5vw;
+	background-position: 4vw;
+	padding-left: 8vw;
+	background-color: #FFF2CC;
+	border: 2px double #D6B656;
+	border-radius: 1vw;
+	margin: -1vw;
+	font-size: 3vw;
+	font-weight: bold;
+	font-family: "Comic Sans MS";
+	color: #994C00;
+	position: relative;
+	top: 10vh;
+	left: 2vw;
+}
+
+#btnLogout {
+	width: 100%;
+	height: 20%;
+	background: url(../Dummy/coffeeBean.png) no-repeat scroll 2px 3px;
+	background-size: 5vw;
+	background-position: 4vw;
+	padding-left: 8vw;
+	background-color: #FFF2CC;
+	border: 2px double #D6B656;
+	border-radius: 1vw;
+	margin: -1vw;
+	font-size: 3vw;
+	font-weight: bold;
+	font-family: "Comic Sans MS";
+	color: #994C00;
+	position: relative;
+	top: 14vh;
+	left: 2vw;
+}
+
+.loginimg_container {
+	position: absolute;
+	top: 28%;
+	left:10%; 
+}
+
+.loginimg_container img {
+  width: 20vw;
+	height: 22vh;
+}
+
+.loginimg_container h1 {
+	text-align: center;
+	font-size: 3vw;
+	font-weight: bold;
+	font-family: "Comic Sans MS";
+	color: #994C00;
+}
+
+.logininfo {
+	position: absolute;
+	top: 35%;
+	left: 35%;
+}
+
+.useremailcontainer {
+	position: relative;
+	font-family: "Comic Sans MS";
+	font-size: 3vw;
+}
+
+.useremailcontainer label {
+	clear: both;
+	float: left;
+	margin-right: 2vw;
+}
+
+.useremailcontainer input {
+	float: left;
+	height:3vw;
+	border-radius: 1vw;
+}
+
+.passwordcontainer {
+	position: relative;
+	font-family: "Comic Sans MS";
+	font-size: 3vw;
+}
+
+.passwordcontainer label {
+	clear: both;
+	float: left;
+	margin-right: 2vw;
+}
+
+.passwordcontainer input {
+	float: left;
+	height:3vw;
+	border-radius: 1vw;
+}
+
+.logincontainer {
+	position: absolute;
+	top: 150%;
+	left: 5%;
+	font-family: "Comic Sans MS";
+	font-size: 2vh;
+}
+
+#btnLogin {
+	/*position: absolute;
+	top: 15px;
+	left: 120%;
+	width: 15vw;
+	height: 5vh;*/
+	background-color: #007A06; 
+    border: none;
+    color: white;
+    text-align: center;
+    /*font-size: 2vh;*/
+    font-family: "Helvetica";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#btnGoogle {
+	/*position: absolute;
+	top: -20px;
+	left: 120%;
+	width: 15vw;
+	height: 5vh;*/
+	background-color: #BE3D0E; 
+    border: none;
+    color: white;
+    text-align: center;
+    /*font-size: 2vh;*/
+    font-family: "Helvetica";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#btnSignup {
+	/*position: absolute;
+	top: 50px;
+	left: 120%;
+	width: 15vw;
+	height: 5vh;*/
+	background-color: #126FA1; 
+    border: none;
+    color: white;
+    text-align: center;
+    /*font-size: 2vh;*/
+    font-family: "Helvetica";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.forgetpw_container {
+	position: absolute;
+	top: 200%;
+	left: 5%;
+	font-family: "Comic Sans MS";
+	font-size: 2vh;
+}
+
+.buttonYes {
+	width: 8vw;
+	height: 5vh;
+	text-align: center;
+	background-color: #58B957;
+	border-radius: 4px;
+	font-size: 2vw;
+	font-family:"Helvetica";
+	color: white;
+	border:none;
+}
+
+.buttonNo {
+	width: 8vw;
+	height: 5vh;
+	text-align: center;
+	background-color: #DB524C;
+	border-radius: 4px;
+	font-size: 2vw;
+	font-family:"Helvetica";
+	color: white;
+	border:none;
+}
+
+.logout_message_container {
+	text-align: center;
+	width: 80%vw;
+	height: 20%vh;
+	font-family:"Courier";
+
+}
+
+.logout_page {
+	background-color: white;
+	position:absolute;
+  	top: 50%;
+  	left: 50%;
+  	margin-top: -50px;
+  	margin-left: -100px;
+}
+
+.logout_button_container {
+	text-align: center;
+}
+
+.buttonConfirm {
+	position: absolute;
+	top:45%;
+	left: 30%;
+	width: 9vw;
+	height: 4vh;
+	background-color: #58B957;
+	font-size: 2vh;
+	border-radius: 3px;
+	font-family: "Courier";
+	color: white;
+}
+
+.buttonDeconfirm {
+	position:absolute;
+	top: 45%;
+	left:40%;
+	width: 9vw;
+	height: 4vh;	
+	background-color: #DB524C;
+	font-size: 2vh;
+	border-radius: 3px;
+	font-family: "Courier";
+	color: white;
+}
+
+.add_message {
+	position:absolute;
+	margin: 1vw;
+	top:30%;
+	left: 10%;
+	text-align: center;
+	font-size: 3vh;
+	font-family: Courier;
+	color: grey;
+}
+
+.removeYes {
+	position: absolute;
+	top:45%;
+	left:20%;
+	width: 20vw;
+	height: 8vh;
+	background-color: #58B957;
+	font-size: 4vh;
+	border-radius: 3px;
+	font-family: Courier;
+	color: white;
+	text-align: center;
+} 
+
+.removeNo {
+	position:absolute;
+	top: 45%;
+	width: 20vw;
+	height: 8vh;	
+	background-color: #FF0000;
+	font-size: 4vh;
+	border-radius: 3px;
+	font-family: Courier;
+	color: white;
+	text-align: center;
+}
+
+.removemsg {
+	margin: 1vw;
+	text-align: center;
+	font-size: 5vh;
+	font-family: Courier;
+	color: grey;
+}
+
+.OrderDetail {
+	position: absolute;
+	top: 5%;
+	left: 18%;
+	color:red;
+	font-family: Courier;
+	font-size: 2vh;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+tr:hover {background-color: red}
+
+tr {
+	background-color: #455FFF;
+    color: white;	
+}
+
+.QuickView table {
+	position: absolute;
+	top: 15%;
+	left:15%;
+}
+
+.orderimg {
+	position:absolute;
+	top: 50%;
+	left: 15%;
+}
+
+.orderimg img {
+	width: 10vw;
+	height: 10vw;
+}
+
+.orderYes {
+	position: absolute;
+	width: 15vw;
+	height: 8vh;
+	text-align: center;
+	background-color: #58B957;
+	font-size: 2vw;
+	font-family:Courier;
+	color: white;
+	top: 50vh;
+	left: 28vw;
+}
+
+.orderNo {
+	position: absolute;
+	width: 15vw;
+	height: 8vh;
+	text-align: center;
+	background-color: #DB524C;
+	font-size: 2vw;
+	font-family:Courier;
+	color: white;
+	top: 50vh;
+	left: 45vw;
+}
+
+.QPcontainer {
+	position: absolute;
+
+	top: 30%;
+	left: 5%;
+}
+
+.QPcontainer tr {
+	background-color: #97D077;
+	color: #994C00;
+}
+
+.QPDone {
+	position: absolute;
+	top: 55%;
+	left: 13%;
+	width: 12vw;
+	height: 8vw;
+	background-color: #3D8BCD;
+	border-radius: 2px;
+	font-size: 2vw;
+	font-family:Courier;
+	color: white;
+}
+
+.dropbtn {
+	background-color: ‎#4682b4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.StorageList {
+	position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Courier;
+}
+
+.dropdown-content a:hover {background-color: #fffacd}
+
+.StorageList:hover .dropdown-content {
+    display: block;
+}
+
+.StorageList:hover .dropbtn {
+    background-color: #daa520;
+}
+
+.selectFriend {
+	position:absolute;
+	top:8%;
+	left:110%;
+    background-color: #008CFF;
+    width: 24vw;
+    height:10vh; 
+    border-radius: 1vh;
+    color: white;
+    padding: 15px 32px;
+    font-size: 2vh;
+}
+
+.backBtn {
+	position: absolute;
+	top:180%;
+	left:110%;
+    background-color: #EEEEEE;
+    border-radius: 1vh;
+    color: white;
+    width: 16vw;
+    height:10vh;
+    font-size: 2vh;
+}
+
+.sharefriend {
+	position: absolute;
+	top: 30%;
+	left: 12%
+}
+
+.phonenumber {
+	width: 90vw;
+	height: 40vh;
+	position: absolute;
+	top:25%;
+	left:5%;
+}
+
+.phonenumber h1 {
+	color:#000000;
+	font-size:4vw;
+	font-family:Courier;
+}
+
+.phonenumber_input {
+	height:4vh;
+	border-radius: 1vw;
+	font-size:4vh;
+}
+
+.mobile {
+	background-color:#EEEEEE;
+}
+
+.sendBtn {
+    background-color: #58B957;
+    border-radius: 1vh;
+    border:none;
+    color: white;
+}
+
+.cancelBtn {
+    background-color: #DB524C;
+    border-radius: 1vh;
+    color: white;
+    border:none;
+}
+
+.uemailcontainer {
+	position: absolute;
+	top:40%;
+	left:10%;
+}
+
+.uemailcontainer label {
+	font-size: 3vw;
+	font-family:Courier;
+	font-weight: bold;
+	color:lightblue;
+}
+
+.uemailcontainer input[type="text"] {
+	border: solid 2px lightgreen;
+  	box-shadow: 0 0 5px 1px lightblue;
+}
+
+.resetpw {
+    background-color: #fffacd;
+    border-radius: 1vh;
+    color: red;
+    font-size: 6vw;
+    font-family: Courier;
+    font-weight:bold;
+}
+
+.searchPage {
+	position: absolute;
+	top:40%;
+	left:15%
+}
+
+.searchbar input {
+	border-radius:2px;
+	border: solid 2px lightblue;
+	text-align: left;        
+	font-family:Courier;        
+}
+
+.searchBtn {
+    background-color: #fffacd;
+    border-radius: 1vh;
+    color: red;
+    font-weight:bold;
+}
+
+.randomcontainer {
+	background-color: lightblue;
+    border-radius: 1vh;
+    color: white;
+    font-weight:bold;
+}
+
+.backcontainer {
+    background-color:#EEEEEE;
+    border-radius: 1vh;
+    color: black;
+    border:none;
+}
+
+.StoragePage {
+	position: absolute;
+	top:35%;
+	left:15%;
+}
+
+.StorageList p {
+	font-size: 5vw;
+	font-family: Courier;
+	color:#DB524C;
+	font-weight:bold;
+} 
+
+.StorageList input {
+	border-radius:2px;
+	border: solid 2px lightblue;
+	text-align: left;        
+	font-family:Courier;
+	font-style:italic;
+	color:#EEEEEE;
+}
+
+.QPBtn {
+	background-color:#008CFF;
+    border-radius: 1vh;
+    color: white;
+    border:none;
+    font-family: Helvetica;
+
+}
+
+.btnListOut {	
+    background-color: #fffacd;
+    border-radius: 1vh;
+    color: red;
+    font-weight:bold;
+}
+
+/*
+.removeBtn {
+    background-color:#DB524C;
+    border-radius: 1vh;
+    color: white;
+    border: none;
+    font-family: Helvetica;
+}
+*/
+
+.coffee_img {
+	text-align: center;
+}
+
+.infocontainer {
+	text-align: center;
+	font-family: "Comic Sans MS";
+	color: #994C00;
+}
+
+.infocontainer input, label {
+	display: block;
+}
+
+.infocontainer button {
+	background-color: #3079ED; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.addbutton {
+	background-color: #58B957; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.removebutton {
+	background-color: #DB524C; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.backbutton {
+	background-color: none; 
+    border: none;
+    text-align: center;
+    font-size: 2vh;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.infocontainer label {
+	font-weight: bold;
+	font-size: 5vw;
+}
+
+.infocontainer input, textarea {
+	border-radius: 2vw;
+	max-width: 80vw
+}
+
+.small-input {
+	width:20vw;
+	height:5vw;
+}
+
+.large-input {
+	width:80vw;
+	height:5vw;
+}
+
+/*
+.usernamecontainer label {
+	clear: both;
+	float: left;
+	margin-right: 2vw;
+}
+
+.usernamecontainer input {
+	float: left;
+	height:3vw;
+	border-radius: 1vw;
+}
+*/
+
+.textbox_size {
+	width: 330px; 
+	height: 30px;
+}
+
+.textbox_coffee_size {
+	width: 200px;
+	height:30px;
+}
+
+.text_size {
+	font-size: 125%;
+}
+
+.bg-warning {
+	background-color: #fcf8e3;
+}
+
+.notes-textarea {
+  width: 300px;
+  height: 120px;
+}
+
+.hyperlink {
+	width: 330px;
+}
+
+.reset_password {
+	font-size: 8vw;
+}
+
+.center_reset {
+	text-align: center;
+}
+
+.center_button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.bigger_text {
+	font_size: 6vw;
+
+}
+
+.removePage {
+	position: absolute;
+	top: 30%;
+	left: 5%;
+}
+
+.btnRemovePage {
+	position: absolute;
+	left: 40%;
+}
+
+.rating:not(old) {
+	display: inline-block;
+	width: 8em;
+	height: 8em;
+	overflow:hidden;
+	vertical-align:bottom;
+}
+/*
+.rating:not(old) > input {
+	margin-right: -100%;
+	opacity:0;
+}
+
+.rating:not(old) > label {
+	display:block;
+	float:right;
+	position:relative;
+	background:url('star-off.svg');
+	background-size:contain;
+}
+
+.rating:not(old) > label:before {
+	content:'';
+	display:block;
+	width:1.5em;
+	height:1.5em;
+	background:url('star-on.svg');
+	background-size:contain;
+	opacity:0;
+}
+
+.rating:not(old) > label:hover:before,
+.rating:not(old) > label:hover ~ label:before,
+.rating:not(:hover) > :checked ~ label:before {
+	opacity:1,
+}
+*/
